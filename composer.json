@@ -1,5 +1,5 @@
 {
-    "name": "confrariaweb/laravel-templade",
+    "name": "confrariaweb/laravel-template",
     "version": "dev-master",
     "description": "Laravel template package",
     "keywords": [
@@ -15,8 +15,14 @@
             "email": "confrariaweb@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "confrariaweb/laravel-datatable": "dev-master",
+        "confrariaweb/laravel-user": "dev-master"
+    },
     "autoload": {
+        "files": [
+            "src/Helpers/view_template.php"
+        ],
         "psr-4": {
             "ConfrariaWeb\\Template\\": "src"
         }
@@ -28,5 +34,6 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
