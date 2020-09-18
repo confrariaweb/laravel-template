@@ -16,7 +16,6 @@
         }
     ],
     "require": {
-        "confrariaweb/laravel-datatable": "dev-master",
         "confrariaweb/laravel-user": "dev-master"
     },
     "autoload": {
@@ -34,6 +33,5 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "dev"
 }
