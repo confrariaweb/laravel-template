@@ -7,9 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Template extends Model
 {
     protected $fillable = [
-        'name', 'user_id'
+        'title', 'user_id', 'status'
     ];
-    
+
+    public function templateable()
+    {
+        return $this->morphTo();
+    }
+
     public function user()
     {
         return $this->belongsTo('App\Models\User');

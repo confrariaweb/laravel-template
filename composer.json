@@ -23,7 +23,8 @@
             "src/Helpers/view_template.php"
         ],
         "psr-4": {
-            "ConfrariaWeb\\Template\\": "src"
+            "ConfrariaWeb\\Template\\": "src",
+            "ConfrariaWeb\\Template\\Databases\\Seeds\\": "databases/Seeds"
         }
     },
     "extra": {
